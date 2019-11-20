@@ -1,0 +1,40 @@
+---
+styles:
+  completion_height: 30
+  error_size: 30
+  event_fill_color: rgb(191,191,223)
+  event_radius: 40
+  event_value_font_family: comic neue, sans-serif
+  event_value_font_weight: bold
+  frame_width: 20
+  higher_order_angle: 30
+  operator_title_font_family: comic neue, sans-serif
+  operator_title_font_weight: bold
+  stream_title_font_family: comic neue, sans-serif
+  stream_title_font_weight: bold
+  stream_title_width: 200
+content:
+  - duration: 5
+    messages:
+      - frame: 2
+        notification:
+          value: "<query>"
+      - frame: 5
+        notification:
+          kind: C
+  - title: delay(time)
+    kind: O
+  - title: mergeMap(query => res$)
+    kind: O
+  - duration: 11
+    decorations:
+      - kind: range
+        frame: 0
+        duration: 2
+    messages:
+      - frame: 8
+        notification:
+          value: "<data>"
+      - frame: 11
+        notification:
+          kind: C

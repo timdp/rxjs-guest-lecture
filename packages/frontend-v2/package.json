@@ -1,0 +1,15 @@
+{
+  "name": "frontend-v2",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "start": "http-server www -s -c -1 -o -p 8202"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
+  }
+}

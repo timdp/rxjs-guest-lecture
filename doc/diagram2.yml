@@ -1,0 +1,69 @@
+---
+styles:
+  completion_height: 30
+  error_size: 30
+  event_fill_color: rgb(191,191,223)
+  event_radius: 40
+  event_value_font_family: comic neue, sans-serif
+  event_value_font_weight: bold
+  frame_width: 20
+  higher_order_angle: 30
+  operator_title_font_family: comic neue, sans-serif
+  operator_title_font_weight: bold
+  stream_title_font_family: comic neue, sans-serif
+  stream_title_font_weight: bold
+  stream_title_width: 200
+content:
+  - title: queries
+    duration: 55
+    messages:
+      - frame: 0
+        notification:
+          value: "<none>"
+      - frame: 10
+        notification:
+          value: H
+      - frame: 15
+        notification:
+          value: "<none>"
+      - frame: 25
+        notification:
+          value: G
+      - frame: 35
+        notification:
+          value: GE
+      - frame: 40
+        notification:
+          value: GEN
+      - frame: 45
+        notification:
+          value: GENT
+  - title: filter(predicate)
+    kind: O
+  - title: empty queries
+    duration: 55
+    messages:
+      - frame: 0
+        notification:
+          value: "<none>"
+      - frame: 15
+        notification:
+          value: "<none>"
+  - title: non-empty queries
+    duration: 55
+    messages:
+      - frame: 10
+        notification:
+          value: H
+      - frame: 25
+        notification:
+          value: G
+      - frame: 35
+        notification:
+          value: GE
+      - frame: 40
+        notification:
+          value: GEN
+      - frame: 45
+        notification:
+          value: GENT

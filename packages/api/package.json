@@ -1,0 +1,23 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "start": "node --experimental-modules lib/app.mjs",
+    "dev": "nodemon -w lib -x \"node --inspect --experimental-modules\" lib/app.mjs"
+  },
+  "dependencies": {
+    "byline": "^5.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "string-similarity": "^3.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
+}

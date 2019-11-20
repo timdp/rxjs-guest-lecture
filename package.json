@@ -1,0 +1,42 @@
+{
+  "private": true,
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "start": "lerna run start --parallel",
+    "test": "standard \"**/*.js\"",
+    "format": "prettier-standard \"**/*.js\" && standard --fix \"**/*.js\"",
+    "doc": "ls -1 doc/*.yml | xargs -n1 -P8 -I{} swirly -f --scale=400 {} {}.png"
+  },
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "lerna": "^3.19.0",
+    "lint-staged": "^9.4.3",
+    "prettier-standard": "^15.0.1",
+    "standard": "^14.3.1",
+    "swirly": "^0.8.1"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "standard": {
+    "globals": [
+      "CustomEvent",
+      "fetch",
+      "rxjs"
+    ]
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier-standard",
+      "standard --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: white;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 800px;
+  margin: 0 auto;
+}
+
+body, input {
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+input {
+  background: white;
+  color: black;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0.5ex;
+}
+
+.query, .error, .results {
+  margin: 2em;
+}
+
+.query input {
+  width: 100%;
+}
+
+.error {
+  color: red;
+  display: none;
+  white-space: pre-wrap;
+}
+
+.results .code {
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.result {
+  float: left;
+  width: 33%;
+  margin-bottom: 1em;
+}
